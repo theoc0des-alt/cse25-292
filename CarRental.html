@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental | Bahamas Getaway</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><img src="images/bha.jpg" alt="Logo"
+                    style="height: 40px; margin-right: 10px;"> Bahamas Getaway</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Rooms.html">Rooms</a></li>
+                            <li><a class="dropdown-item" href="CarRental.html">Car rental</a></li>
+                            <li><a class="dropdown-item" href="Attractions.html">Attractions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">🌐</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-5 pt-4">
+        <section class="hero py-5">
+            <div class="container text-center text-lg-start">
+                <h1>Car Rental</h1>
+                <p>Explore the islands at your own pace with our flexible car rental options, from compact cars to luxury convertibles.</p>
+                <a href="Contact.html" class="btn btn-dark btn-lg">Get in touch</a>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/Volovo.jpg" class="card-img-top" alt="Volovo">
+                        <div class="card-body">
+                            <h5 class="card-title">Volovo Sedan</h5>
+                            <p class="card-text">Comfortable and efficient, perfect for island cruising and city sightseeing.</p>
+                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/suv.jpg" class="card-img-top" alt="SUV">
+                        <div class="card-body">
+                            <h5 class="card-title">Island SUV</h5>
+                            <p class="card-text">Spacious and rugged, ideal for group travel and beachside adventures.</p>
+                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/sedan.jpg" class="card-img-top" alt="Sedan">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Sedan</h5>
+                            <p class="card-text">Smooth ride with premium features for a stylish stay in the Bahamas.</p>
+                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/polo.jpg" class="card-img-top" alt="Polo">
+                        <div class="card-body">
+                            <h5 class="card-title">Compact Polo</h5>
+                            <p class="card-text">Fuel-efficient and easy to park, great for solo explorers or couples.</p>
+                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h2 class="mb-4">Book your rental</h2>
+                            <form id="rentalForm">
+                                <div class="row g-3"
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label">Full name</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Your name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="carChoice" class="form-label">Car choice</label>
+                                        <select id="carChoice" class="form-select">
+                                            <option selected>Choose a car</option>
+                                            <option>Volovo Sedan</option>
+                                            <option>Island SUV</option>
+                                            <option>Premium Sedan</option>
+                                            <option>Compact Polo</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="pickupDate" class="form-label">Pickup date</label>
+                                        <input type="date" class="form-control" id="pickupDate">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="returnDate" class="form-label">Return date</label>
+                                        <input type="date" class="form-control" id="returnDate">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Additional requests</label>
+                                        <textarea id="message" class="form-control" rows="4" placeholder="Any special requests"></textarea>
+                                    </div>
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-dark btn-lg">Submit booking</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <a href="index.html">Home</a><br>
+                    <a href="About.html">About</a><br>
+                    <a href="Contact.html">Contact</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:bahamasgetaway@gmail.com">bahamasgetaway@gmail.com</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow us</h5>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('rentalForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Thank you! Your booking request is confirmed. You will be redirected to the confirmation page.');
+            window.location.href = 'BookingConfirmation.html';
+        });
+    </script>
+</body>
+
+</html>

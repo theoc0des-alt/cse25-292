@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Bahamas Getaway</title>
+    <title>Sign Up | Bahamas Getaway</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Services</a>
@@ -31,7 +31,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="SignUp.html">Sign up</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">USD</a>
@@ -56,36 +56,50 @@
         </div>
     </nav>
 
-    <main class="mt-5 pt-4">
-        <section class="hero py-5">
-            <div class="container text-center text-lg-start">
-                <h1>About Bahamas Getaway</h1>
-                <p>We provide island stays, rental services, and unforgettable experiences in the Bahamas.</p>
-                <a href="Contact.html" class="btn btn-dark btn-lg">Contact us</a>
+    <main class="auth-page py-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-7">
+                    <div class="auth-card p-4 shadow-sm rounded-4">
+                        <h2 class="mb-3">Create your account</h2>
+                        <p class="text-muted mb-4">Join Bahamas Getaway to book stays, manage trips, and save favorites.</p>
+                        <form action="#" method="post" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="signupEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signupEmail" name="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" name="password" placeholder="Enter password" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="confirmPassword" class="form-label">Confirm password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 mt-4">Sign up</button>
+                        </form>
+                        <p class="text-center text-muted mt-4 mb-0">Already have an account? <a href="Login.html">Login here</a></p>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section class="container my-5">
-            <div class="row gy-4">
-                <div class="col-lg-4">
-                    <h2>Our story</h2>
-                    <p>Bahamas Getaway brings premium island travel and hospitality together for visitors looking for comfort and adventure.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Our promise</h2>
-                    <p>We deliver personalized service, clean stays, and easy bookings so your vacation feels effortless from arrival to departure.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Our mission</h2>
-                    <p>To make every Bahamas visit memorable with trusted service, quality accommodations, and local travel support.</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-dark text-white py-4">
         <div class="container">
-            <div class="row gy-4">
+            <div class="row gy-3">
                 <div class="col-md-4">
                     <h5>Links</h5>
                     <a href="index.html">Home</a><br>

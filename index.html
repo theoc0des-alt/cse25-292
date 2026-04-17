@@ -1,115 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahamas Getaway</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/bha.png">
+
 </head>
 
 <body>
-    <!--NAVBAR-->
-    <header>
-        <nav>
-            <!--logo,menu, buttons-->
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><img src="images/bha.jpg" alt="Logo"
+                    style="height: 40px; margin-right: 10px;"> Bahamas Getaway</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-    <!-- HERO SECTION -->
-    <section>
-        <h1>Welcome to Bahamas!</h1>
-        <p>Discover the breathtaking beauty of Bahamas</p>
-        <button>Learn more</button>
-        <button>Book now</button>
-    </section>
-
-    <!-- HERO IMAGE -->
-    <section>
-        <img src="images/beach.jpg" alt="Bahamas beach">
-    </section>
-
-    <!--  ATTRACTIONS HEADER -->
-    <section>
-        <h2>Attractions</h2>
-        <p>Experience the best attractions in Bahamas.</p>
-        <button>Reserve now</button>
-    </section>
-
-    <!-- ATTRACTIONS LIST -->
-    <section>
-
-        <!-- Nassau -->
-        <div>
-            <img src="images/nassau.jpg" alt="Nassau">
-            <div>
-                <h3>Nassau</h3>
-                <p>Description...</p>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Rooms.html">Rooms</a></li>
+                            <li><a class="dropdown-item" href="CarRental.html">Car rental</a></li>
+                            <li><a class="dropdown-item" href="Attractions.html">Attractions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">🌐</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- Exuma -->
-        <div>
-            <img src="images/exuma.jpg" alt="Exuma">
-            <div>
-                <h3>Exuma</h3>
-                <p>Description...</p>
+    <main class="mt-5 pt-4">
+        <section class="hero py-5" id="About">
+            <div class="container text-center text-lg-start">
+                <h1>Welcome to Bahamas</h1>
+                <p>Discover the breathtaking beauty of the Bahamas with premium stays and island adventures.</p>
+                <a href="Rooms.html" class="btn btn-dark btn-lg">Book now</a>
+            </div>
+
+            <div class="container py-4">
+                <img src="images/beach.jpg" alt="Bahamas beach" class="img-fluid rounded">
+            </div>
+        </section>
+
+        <section class="container my-5" id="Attractions">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
+                <div>
+                    <h2>Attractions</h2>
+                    <p>Experience the best the Bahamas has to offer: beaches, islands, and luxury escapes.</p>
+                </div>
+                <a href="Attractions.html" class="btn btn-outline-primary">Reserve now</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/nassau.jpg" class="card-img-top" alt="Nassau">
+                        <div class="card-body">
+                            <h5 class="card-title">Nassau</h5>
+                            <p class="card-text">The vibrant capital blends island culture with modern attractions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/exuma.jpg" class="card-img-top" alt="Exuma">
+                        <div class="card-body">
+                            <h5 class="card-title">Exuma</h5>
+                            <p class="card-text">Crystal-clear waters, secluded beaches and unforgettable island life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/paradise.jpg" class="card-img-top" alt="Paradise Island">
+                        <div class="card-body">
+                            <h5 class="card-title">Paradise Island</h5>
+                            <p class="card-text">Upscale resorts, white-sand beaches and a luxury coastal experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5" id="Rooms">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/room.jpg" alt="Room view" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Rooms our guests love</h2>
+                            <p class="card-text">Enjoy ocean views, modern amenities, and a relaxing coastal atmosphere.</p>
+                            <h3 class="mt-3">P2,212/mo</h3>
+                            <a href="Rooms.html" class="btn btn-dark mt-3">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h3>Stay in comfort</h3>
+                            <p>Choose a room designed to give you maximum relaxation and beautiful island views.</p>
+                            <ul>
+                                <li>Beachfront views</li>
+                                <li>Free Wi-Fi</li>
+                                <li>Daily breakfast available</li>
+                            </ul>
+                            <a href="Rooms.html" class="btn btn-dark mt-3 align-self-start">View rooms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5" id="Contact">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <a href="Home.html">Home</a><br>
+                    <a href="About.html">About</a><br>
+                    <a href="Contact.html">Contact</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:bahamasgetaway@gmail.com">bahamasgetaway@gmail.com</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow us</h5>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Facebook</a>
+                </div>
             </div>
         </div>
-
-        <!-- Paradise Island -->
-        <div>
-            <img src="images/paradise.jpg" alt="Paradise Island">
-            <div>
-                <h3>Paradise Island</h3>
-                <p>Description...</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- ROOMS -->
-    <section>
-        <h2>Rooms our guests love</h2>
-
-        <div>
-            <h3>Ocean View</h3>
-            <p>Description...</p>
-            <h4>P2,212/mo</h4>
-        </div>
-
-        <div>
-            <img src="images/room.jpg" alt="Room view">
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div>
-            <h4>Links</h4>
-            <a href="Home.html">Home</a><br>
-            <a href="About.html">About</a><br>
-            <a href="Contact.html">Contact</a>
-        </div>
-
-        <div>
-            <h4>Contact Us</h4>
-            <p>email@email.com</p>
-        </div>
-
-        <div>
-            <h4>Follow us</h4>
-        </div>
-
     </footer>
-
 </body>
 
 </html>

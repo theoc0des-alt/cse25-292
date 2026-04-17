@@ -1,15 +1,127 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF=8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | Bahamas Getaway</title>
 </head>
 
 <body>
-    <h1>
-        Progress Upcoming...
-    </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><img src="images/bha.jpg" alt="Logo"
+                    style="height: 40px; margin-right: 10px;"> Bahamas Getaway</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Rooms.html">Rooms</a></li>
+                            <li><a class="dropdown-item" href="CarRental.html">Car rental</a></li>
+                            <li><a class="dropdown-item" href="Attractions.html">Attractions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">🌐</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-5 pt-4">
+        <section class="hero py-5">
+            <div class="container text-center text-lg-start">
+                <h1>Contact Bahamas Getaway</h1>
+                <p>Have a question, want help with a booking, or need holiday recommendations? Reach out and we’ll reply fast.</p>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm rounded-4 p-4">
+                        <h2 class="mb-4">Send us a message</h2>
+                        <form action="#" method="post" novalidate>
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="contactName" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea class="form-control" id="contactMessage" name="message" rows="6" placeholder="Tell us how we can help" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Send message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm rounded-4 p-4 bg-white">
+                        <h2 class="mb-4">Contact details</h2>
+                        <p class="mb-3"><strong>Email:</strong> <a href="mailto:bahamasgetaway@gmail.com">bahamasgetaway@gmail.com</a></p>
+                        <p class="mb-3"><strong>Phone:</strong> +267 123 4567</p>
+                        <p class="mb-3"><strong>Address:</strong> 123 Island Road, Nassau, Bahamas</p>
+                        <p class="text-muted">We are here to help with reservations, travel planning, or questions about our services.</p>
+                        <a href="Login.html" class="btn btn-outline-dark mt-3">Login</a>
+                        <a href="SignUp.html" class="btn btn-outline-primary mt-3 ms-2">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <a href="index.html">Home</a><br>
+                    <a href="About.html">About</a><br>
+                    <a href="Contact.html">Contact</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:bahamasgetaway@gmail.com">bahamasgetaway@gmail.com</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow us</h5>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
