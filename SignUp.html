@@ -5,13 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | Bahamas Getaway</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><img src="images/bha.jpg" alt="Logo"
-                    style="height: 40px; margin-right: 10px;"> Bahamas Getaway</a>
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                <div id="id-logo">
+                    <img src="images/bha.jpg" id="Logo" alt="The Bahamas flag under the ocean"
+                        style="height: 40px; margin-right: 10px;"> Bahamas Getaway
+                </div>
+            </a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                 aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,6 +31,25 @@
 
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">🌐</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
@@ -31,24 +62,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="SignUp.html">Sign up</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
-                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
-                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
-                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
-                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="languageDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">🌐</a>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Español</a></li>
-                            <li><a class="dropdown-item" href="#">Français</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -56,47 +70,58 @@
         </div>
     </nav>
 
-    <main class="auth-page py-5">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-7">
-                    <div class="auth-card p-4 shadow-sm rounded-4">
-                        <h2 class="mb-3">Create your account</h2>
-                        <p class="text-muted mb-4">Join Bahamas Getaway to book stays, manage trips, and save favorites.</p>
-                        <form action="#" method="post" novalidate>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="firstName" class="form-label">First name</label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="lastName" class="form-label">Last name</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required>
-                                </div>
-                            </div>
-                            <div class="mb-3 mt-3">
-                                <label for="signupEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="signupEmail" name="email" placeholder="name@example.com" required>
-                            </div>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="signupPassword" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="signupPassword" name="password" placeholder="Enter password" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="confirmPassword" class="form-label">Confirm password</label>
-                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-dark w-100 mt-4">Sign up</button>
-                        </form>
-                        <p class="text-center text-muted mt-4 mb-0">Already have an account? <a href="Login.html">Login here</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <main class="auth-page" style="min-height: calc(100vh - 76px); display: flex; align-items: center; background: #f4f6f8;">
+    <div class="container py-5">
+        <div class="row g-0 shadow-lg rounded-4 overflow-hidden" style="min-height: 500px;">
 
+            <!-- Left: image -->
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="images/beach.jpg" alt="Bahamas beach"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <!-- Right: form card -->
+            <div class="col-lg-6 bg-white p-5 d-flex flex-column justify-content-center">
+                <h2 class="mb-2">Create your account</h2>
+                <p class="text-muted mb-4">Join Bahamas Getaway to book stays, manage trips, and save favorites.</p>
+                <form action="#" method="post" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="First name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="signupEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="signupEmail" name="email"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" name="password"
+                                placeholder="Enter password" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="confirmPassword" class="form-label">Confirm password</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                                placeholder="Confirm password" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 mt-4">Sign up</button>
+                </form>
+                <p class="text-center text-muted mt-4 mb-0">Already have an account? <a href="Login.html">Login here</a></p>
+            </div>
+
+        </div>
+    </div>
+</main>
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row gy-3">
@@ -113,7 +138,7 @@
                 <div class="col-md-4">
                     <h5>Follow us</h5>
                     <a href="#">Instagram</a><br>
-                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
                 </div>
             </div>
         </div>

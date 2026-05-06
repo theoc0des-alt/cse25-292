@@ -5,20 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental | Bahamas Getaway</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><img src="images/bha.jpg" alt="Logo"
-                    style="height: 40px; margin-right: 10px;"> Bahamas Getaway</a>
+            <a class="navbar-brand fw-bold" href="index.html">
+                <div id="id-logo">
+                    <img src="images/bha.jpg" id="Logo" alt="The Bahamas flag under the ocean"
+                        style="height: 40px; margin-right: 10px;"> Bahamas Getaway
+                </div>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                 aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">🌐</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
@@ -32,25 +58,6 @@
                     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
-                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
-                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
-                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
-                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="languageDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">🌐</a>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Español</a></li>
-                            <li><a class="dropdown-item" href="#">Français</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -58,55 +65,120 @@
 
     <main class="mt-5 pt-4">
         <section class="hero py-5">
-            <div class="container text-center text-lg-start">
+            <div class="d-flex flex-column align-items-center text-center">
                 <h1>Car Rental</h1>
                 <p>Explore the islands at your own pace with our flexible car rental options, from compact cars to luxury convertibles.</p>
-                <a href="Contact.html" class="btn btn-dark btn-lg">Get in touch</a>
+                <a href="#booking" class="btn btn-dark btn-lg">Book a car</a>
             </div>
         </section>
 
         <section class="container my-5">
             <div class="row g-4">
+
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/cars/Volovo.jpg" class="card-img-top" alt="Volovo">
+                        <img src="images/cars/Volovo.jpg" class="card-img-top" alt="Volovo Sedan">
                         <div class="card-body">
                             <h5 class="card-title">Volovo Sedan</h5>
+                            <p class="fw-bold mb-1">P850/day</p>
+                            <p class="text-muted small mb-2">5 Seats · Automatic · Petrol</p>
                             <p class="card-text">Comfortable and efficient, perfect for island cruising and city sightseeing.</p>
-                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/cars/suv.jpg" class="card-img-top" alt="SUV">
+                        <img src="images/cars/suv.jpg" class="card-img-top" alt="Island SUV">
                         <div class="card-body">
                             <h5 class="card-title">Island SUV</h5>
+                            <p class="fw-bold mb-1">P1,200/day</p>
+                            <p class="text-muted small mb-2">7 Seats · Automatic · Diesel</p>
                             <p class="card-text">Spacious and rugged, ideal for group travel and beachside adventures.</p>
-                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/cars/sedan.jpg" class="card-img-top" alt="Sedan">
+                        <img src="images/cars/sedan.jpg" class="card-img-top" alt="Premium Sedan">
                         <div class="card-body">
                             <h5 class="card-title">Premium Sedan</h5>
+                            <p class="fw-bold mb-1">P1,500/day</p>
+                            <p class="text-muted small mb-2">5 Seats · Automatic · Petrol</p>
                             <p class="card-text">Smooth ride with premium features for a stylish stay in the Bahamas.</p>
-                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/cars/polo.jpg" class="card-img-top" alt="Polo">
+                        <img src="images/cars/polo.jpg" class="card-img-top" alt="Compact Polo">
                         <div class="card-body">
                             <h5 class="card-title">Compact Polo</h5>
+                            <p class="fw-bold mb-1">P650/day</p>
+                            <p class="text-muted small mb-2">5 Seats · Manual · Petrol</p>
                             <p class="card-text">Fuel-efficient and easy to park, great for solo explorers or couples.</p>
-                            <a href="#booking" class="btn btn-primary">Rent now</a>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/convertible.jpg" class="card-img-top" alt="Luxury Convertible">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Convertible</h5>
+                            <p class="fw-bold mb-1">P2,000/day</p>
+                            <p class="text-muted small mb-2">2 Seats · Automatic · Petrol</p>
+                            <p class="card-text">Turn heads on island roads with this sleek open-top luxury convertible.</p>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/minivan.jpg" class="card-img-top" alt="Family Minivan">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Minivan</h5>
+                            <p class="fw-bold mb-1">P1,350/day</p>
+                            <p class="text-muted small mb-2">8 Seats · Automatic · Petrol</p>
+                            <p class="card-text">Perfect for large families or groups needing extra space and comfort.</p>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/jeep.jpg" class="card-img-top" alt="Island Jeep">
+                        <div class="card-body">
+                            <h5 class="card-title">Island Jeep</h5>
+                            <p class="fw-bold mb-1">P1,100/day</p>
+                            <p class="text-muted small mb-2">4 Seats · Manual · Diesel</p>
+                            <p class="card-text">Rugged and adventurous, built for off-road island exploration.</p>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/cars/electric.jpg" class="card-img-top" alt="Electric Car">
+                        <div class="card-body">
+                            <h5 class="card-title">Electric Car</h5>
+                            <p class="fw-bold mb-1">P950/day</p>
+                            <p class="text-muted small mb-2">5 Seats · Automatic · Electric</p>
+                            <p class="card-text">Eco-friendly and quiet, ideal for sustainable island travel.</p>
+                            <a href="#booking" class="btn btn-primary w-100">Rent now</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -117,7 +189,7 @@
                         <div class="card-body">
                             <h2 class="mb-4">Book your rental</h2>
                             <form id="rentalForm">
-                                <div class="row g-3"
+                                <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="fullName" class="form-label">Full name</label>
                                         <input type="text" class="form-control" id="fullName" placeholder="Your name">
@@ -130,10 +202,14 @@
                                         <label for="carChoice" class="form-label">Car choice</label>
                                         <select id="carChoice" class="form-select">
                                             <option selected>Choose a car</option>
-                                            <option>Volovo Sedan</option>
-                                            <option>Island SUV</option>
-                                            <option>Premium Sedan</option>
-                                            <option>Compact Polo</option>
+                                            <option>Volovo Sedan - P850/day</option>
+                                            <option>Island SUV - P1,200/day</option>
+                                            <option>Premium Sedan - P1,500/day</option>
+                                            <option>Compact Polo - P650/day</option>
+                                            <option>Luxury Convertible - P2,000/day</option>
+                                            <option>Family Minivan - P1,350/day</option>
+                                            <option>Island Jeep - P1,100/day</option>
+                                            <option>Electric Car - P950/day</option>
                                         </select>
                                     </div>
                                     <div class="col-md-3">
@@ -146,7 +222,8 @@
                                     </div>
                                     <div class="col-12">
                                         <label for="message" class="form-label">Additional requests</label>
-                                        <textarea id="message" class="form-control" rows="4" placeholder="Any special requests"></textarea>
+                                        <textarea id="message" class="form-control" rows="4"
+                                            placeholder="Any special requests"></textarea>
                                     </div>
                                     <div class="col-12 text-end">
                                         <button type="submit" class="btn btn-dark btn-lg">Submit booking</button>
@@ -176,11 +253,12 @@
                 <div class="col-md-4">
                     <h5>Follow us</h5>
                     <a href="#">Instagram</a><br>
-                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
                 </div>
             </div>
         </div>
     </footer>
+
     <script>
         document.getElementById('rentalForm').addEventListener('submit', function (event) {
             event.preventDefault();

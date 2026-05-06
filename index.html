@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahamas Getaway</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><img src="images/bha.jpg" alt="Logo"
-                    style="height: 40px; margin-right: 10px;"> Bahamas Getaway</a>
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                <div id="id-logo">
+                    <img src="images/bha.jpg" id="Logo" alt="The Bahamas flag under the ocean"
+                        style="height: 40px; margin-right: 10px;"> Bahamas Getaway
+                </div>
+            </a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                 aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,6 +31,25 @@
 
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">🌐</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
@@ -33,23 +63,6 @@
                     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="SignUp.html">Sign up</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
-                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
-                            <li><a class="dropdown-item" href="#">BWP (P)</a></li>
-                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
-                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="languageDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">🌐</a>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Español</a></li>
-                            <li><a class="dropdown-item" href="#">Français</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -57,88 +70,122 @@
         </div>
     </nav>
 
-    <main class="mt-5 pt-4">
-        <section class="hero py-5" id="About">
-            <div class="container text-center text-lg-start">
-                <h1>Welcome to Bahamas</h1>
+    <section class="hero py-5" id="About">
+
+        <div class="container text-center text-lg-start">
+            <div class="card-body text-center p-5">
+                <h1>Welcome to Bahamas!</h1>
                 <p>Discover the breathtaking beauty of the Bahamas with premium stays and island adventures.</p>
-                <a href="Rooms.html" class="btn btn-dark btn-lg">Book now</a>
+
+                <a href="Rooms.html" class="btn btn-primary btn-lg" id="book_button" style="background-color: #0e0e0e;">
+                    Book now
+                </a>
             </div>
 
-            <div class="container py-4">
-                <img src="images/beach.jpg" alt="Bahamas beach" class="img-fluid rounded">
-            </div>
-        </section>
+        </div>
 
-        <section class="container my-5" id="Attractions">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
-                <div>
-                    <h2>Attractions</h2>
-                    <p>Experience the best the Bahamas has to offer: beaches, islands, and luxury escapes.</p>
-                </div>
-                <a href="Attractions.html" class="btn btn-outline-primary">Reserve now</a>
-            </div>
+        <div class="hero-image">
+            <img src="images/beach.jpg" alt="Bahamas beach scene">
+        </div>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/nassau.jpg" class="card-img-top" alt="Nassau">
-                        <div class="card-body">
-                            <h5 class="card-title">Nassau</h5>
-                            <p class="card-text">The vibrant capital blends island culture with modern attractions.</p>
-                        </div>
+        </div>
+    </section>
+
+  
+
+    <section class="my-5" id="Attractions">
+        <!-- Teal header bar -->
+        <div class="d-flex justify-content-between align-items-center px-4 py-3" style="background: #12f7eb;">
+            <div>
+                <h2 class="mb-0">Attractions</h2>
+                <p class="mb-0">Experience the best attractions in Bahamas.</p>
+            </div>
+            <a href="Attractions.html" class="btn btn-dark">Reserve now</a>
+        </div>
+
+        <!-- White content area -->
+        <div class="px-4 py-4" style="background: #ffffff;">
+            <div class="d-flex flex-column gap-4">
+
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <img src="images/nassau.jpg" class="img-fluid rounded-4 w-100"
+                            style="height:220px; object-fit:cover;" alt="Nassau">
+                    </div>
+                    <div class="col-md-8 ps-4">
+                        <h5>Nassau</h5>
+                        <p class="text-muted">The vibrant capital of the Bahamas, Nassau blends rich island
+                            culture with modern attractions. Visitors can enjoy stunning beaches, local markets,
+                            historical landmarks, and a lively atmosphere filled with dining, shopping, and
+                            entertainment.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/exuma.jpg" class="card-img-top" alt="Exuma">
-                        <div class="card-body">
-                            <h5 class="card-title">Exuma</h5>
-                            <p class="card-text">Crystal-clear waters, secluded beaches and unforgettable island life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/paradise.jpg" class="card-img-top" alt="Paradise Island">
-                        <div class="card-body">
-                            <h5 class="card-title">Paradise Island</h5>
-                            <p class="card-text">Upscale resorts, white-sand beaches and a luxury coastal experience.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="container my-5" id="Rooms">
-            <div class="row g-4">
+                <hr class="my-1">
+
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <img src="images/exuma.jpg" class="img-fluid rounded-4 w-100"
+                            style="height:220px; object-fit:cover;" alt="Exuma">
+                    </div>
+                    <div class="col-md-8 ps-4">
+                        <h5>Exuma</h5>
+                        <p class="text-muted">Exuma is a breathtaking chain of islands known for its crystal-clear
+                            turquoise waters and untouched natural beauty. It offers a peaceful escape with unique
+                            experiences like swimming pigs, secluded beaches, and world-class snorkeling and boating
+                            adventures.</p>
+                    </div>
+                </div>
+
+                <hr class="my-1">
+
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <img src="images/paradise.jpg" class="img-fluid rounded-4 w-100"
+                            style="height:220px; object-fit:cover;" alt="Paradise Island">
+                    </div>
+                    <div class="col-md-8 ps-4">
+                        <h5>Paradise Island</h5>
+                        <p class="text-muted">Paradise Island is a premier luxury destination, famous for its
+                            upscale resorts, pristine white-sand beaches, and relaxing coastal atmosphere.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms is now its OWN separate section, outside Attractions -->
+    <section class="my-5" id="Rooms">
+        <!-- Teal header bar -->
+        <div class="d-flex justify-content-between align-items-center px-4 py-3" style="background: #12f7eb;">
+            <h2 class="mb-0">Rooms our guests love</h2>
+            <a href="Rooms.html" class="btn btn-dark">Discover more</a>
+        </div>
+
+        <!-- Light gray content area -->
+        <div class="px-4 py-5" style="background: #e8e8e8;">
+            <div class="row align-items-center">
+
+                <!-- Left: text -->
                 <div class="col-lg-6">
-                    <div class="card shadow-sm h-100">
-                        <img src="images/room.jpg" alt="Room view" class="card-img-top">
-                        <div class="card-body">
-                            <h2 class="card-title">Rooms our guests love</h2>
-                            <p class="card-text">Enjoy ocean views, modern amenities, and a relaxing coastal atmosphere.</p>
-                            <h3 class="mt-3">P2,212/mo</h3>
-                            <a href="Rooms.html" class="btn btn-dark mt-3">Discover more</a>
-                        </div>
-                    </div>
+                    <h3>Ocean View</h3>
+                    <p class="text-muted">Enjoy a comfortable stay with stunning views of the ocean,
+                        featuring a private balcony, modern amenities, and a relaxing coastal atmosphere.</p>
+                    <h2><sup style="font-size:1rem;">P</sup>2,212<small style="font-size:1rem;">/mo</small></h2>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body d-flex flex-column justify-content-center">
-                            <h3>Stay in comfort</h3>
-                            <p>Choose a room designed to give you maximum relaxation and beautiful island views.</p>
-                            <ul>
-                                <li>Beachfront views</li>
-                                <li>Free Wi-Fi</li>
-                                <li>Daily breakfast available</li>
-                            </ul>
-                            <a href="Rooms.html" class="btn btn-dark mt-3 align-self-start">View rooms</a>
-                        </div>
-                    </div>
+
+                <!-- Right: image -->
+                <div class="col-lg-6 d-flex align-items-center gap-3">
+                    <img src="images/room.jpg" class="rounded-4 w-100" style="height: 280px; object-fit: cover;"
+                        alt="Ocean View Room">
+                    <span style="font-size: 1.5rem; color: #aaa;">&#8250;</span>
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+
     </main>
 
     <footer class="bg-dark text-white py-5" id="Contact">
@@ -146,7 +193,7 @@
             <div class="row gy-4">
                 <div class="col-md-4">
                     <h5>Links</h5>
-                    <a href="Home.html">Home</a><br>
+                    <a href="index.html">Home</a><br>
                     <a href="About.html">About</a><br>
                     <a href="Contact.html">Contact</a>
                 </div>
@@ -157,7 +204,7 @@
                 <div class="col-md-4">
                     <h5>Follow us</h5>
                     <a href="#">Instagram</a><br>
-                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
                 </div>
             </div>
         </div>
