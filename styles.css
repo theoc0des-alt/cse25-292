@@ -9,7 +9,7 @@
 body {
   margin: 0;
   background: #ffffff;
-  padding-top: 76px;
+  padding-top: 60px;
 }
 
 img {
@@ -19,7 +19,7 @@ img {
 
 
 .navbar-brand {
-  font-size: 1rem;
+  font-size: 1.25rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -30,8 +30,8 @@ img {
 }
 
 #Logo {
-  height: 120px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -40,10 +40,10 @@ img {
 .navbar .nav-link {
   color: #111111 !important;
   transition: color 0.2s ease;
+  font-size: 1.25rem;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.navbar .nav-link:hover,.navbar .nav-link:focus {
   color: #000000;
 }
 
@@ -54,7 +54,10 @@ img {
   flex-direction: column;
   justify-content: center;
 }
-
+main .hero {
+  min-height: 300px;
+  padding: 3rem 0;
+}
 
 .hero h1 {
   font-size: clamp(2.8rem, 5vw, 4.5rem);
@@ -126,7 +129,7 @@ img {
   background: #ffffff;
   border-radius: 24px;
   overflow: hidden;
-   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
   transition: transform 0.2s ease;
 
 }
@@ -172,9 +175,4 @@ footer a:hover {
 
 footer p {
   color: #ddd;
-}
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
 }
